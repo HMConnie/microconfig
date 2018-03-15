@@ -1,3 +1,14 @@
-spring: 
-  application: 
-    name: microcloud-config-eureka-client
+spring:
+  profiles:
+   active:
+   - dev
+---
+spring:
+  profiles: dev
+  application:
+    name: microcloud-config-eureka-client-7001
+---
+spring:
+  profiles: beta
+  application:
+    name: microcloud-config-eureka-client-7001
